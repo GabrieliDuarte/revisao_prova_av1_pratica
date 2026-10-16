@@ -1,0 +1,10 @@
+import express, {type Request, type Response } from "express";
+
+const app = express ();
+const port = 3000;
+
+app.use(express.json());
+
+app.listen(port, ()=>{
+    console.log(`SERVIDOR DO IMPÉRIO DO SONINHO A RODAR NA PORTA ${port}!`)
+})
